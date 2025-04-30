@@ -79,7 +79,7 @@ if(!_canHeal)exitWith{
 };
 // [_healer, _unconscious] call ACE_medical_ai_fnc_healingLogic;
 [_unconscious, false] call ace_medical_fnc_setUnconscious;
-[_healer, _unconscious] call ace_medical_treatment_fnc_fullHeal;
+[_healer, _unconscious] call ACE_medical_ai_fnc_healingLogic;
 [_healer, _unconscious, true] call SFSM_fnc_endBuddyRevive;
 
 [_healer, _unconscious] call SFSM_fnc_moraleOnRevive;
