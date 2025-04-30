@@ -44,6 +44,20 @@ private _allKits = [
     "ACE_fieldDressing",
     "ACE_quikclot",
     "ACE_epinephrine"
+    "ACM_PressureBandage"
+    "ACE_morphine"
+    "ACE_tourniquet"
+    "ACM_ChestSeal"
+    "ACM_NPA"
+    "ACM_ElasticWrap"
+    "ACE_salineIV_250"
+    "ACE_tourniquet"
+    "ACE_splint"
+    "ACM_ChestSeal"
+    "ACM_NPA"
+    "ACM_NCDKit"
+    "ACM_SuctionBag"
+    "ACM_IV_16g"
 ];
 
 {
