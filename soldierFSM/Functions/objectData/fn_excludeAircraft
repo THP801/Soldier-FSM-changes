@@ -9,4 +9,4 @@ private _airExclude = [
 
 
 
-if("_airExclude" true) setcall setVariable ["SFSM_Excluded", true, true];
+if("_airExclude" true) call setVariable ["SFSM_Excluded", true, true];
