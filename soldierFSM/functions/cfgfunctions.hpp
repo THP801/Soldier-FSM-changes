@@ -1261,6 +1261,7 @@ class CfgFunctions
             class validEnemyInArr             {};
             class nearestKnownEnemy           {};
             class distanceToKnownEnemy        {};
+	    class excludeAircraft	      {};
             class isMachineGunner             {};
             class isAvailMgMan                {};
             class isATSoldier                 {};
