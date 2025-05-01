@@ -1,5 +1,7 @@
-{
-    if (_x isKindOf "Air") then {
-        _x setVariable ["excluded_SFSM", true, true];
-    };
-} forEach vehicles;
+if (isServer) then {
+    {
+        if (_x isKindOf "Air") then {
+            _x setVariable ["excluded_SFSM", true, true];
+        };
+    } forEach vehicles;
+};
