@@ -9,4 +9,4 @@ private _airExclude = [
 
 
 
-{_man setVariable ["SFSM_Excluded", true, true];
+if _airExclude setVariable ["SFSM_Excluded", true, true];
