@@ -1,4 +1,12 @@
 params [
 
+private _airExclude = [
+  "kindOfAir"
+  "helicopter"
+  "plane"
+  "VTOL"
+];
+
+
 
 {_man setVariable ["SFSM_Excluded", true, true];
