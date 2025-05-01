@@ -1,0 +1,4 @@
+params [
+
+
+{_man setVariable ["SFSM_Excluded", true, true];
