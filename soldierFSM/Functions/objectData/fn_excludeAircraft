@@ -1,12 +1,5 @@
-params [
-
-private _airExclude = [
-  "kindOfAir"
-  "helicopter"
-  "plane"
-  "VTOL"
-];
-
-
-
-if([_airExclude]) call setVariable SFSM_Excluded;
+{
+    if (_x isKindOf "Air") then {
+        _x setVariable ["excluded_SFSM", true, true];
+    };
+} forEach vehicles;
