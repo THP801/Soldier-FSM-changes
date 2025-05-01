@@ -1,3 +1,4 @@
+// this excludes aircraft from soldierFSM
 if (isServer) then {
     {
         if (_x isKindOf "Air") then {
