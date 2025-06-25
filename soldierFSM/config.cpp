@@ -2,6 +2,8 @@
 #include "\soldierFSM\functions\cfgFunctions.hpp"
 #include "\soldierFSM\sounds\cfgRadio.hpp"
 #include "\soldierFSM\sounds\cfgSounds.hpp"
+#include "CfgEventhandlers.hpp"
+#include "script_component.hpp"
 
 class CfgPatches
 {
@@ -9,9 +11,9 @@ class CfgPatches
 	{
 		
 		name 				= "soldier FSM";
-		author 				= "YipMan(design / funds), Jihem(funds & Server), Deebs(design / funds), Blazingfire(funds & Bugtesting), Tally(code)";
+		author 				= "YipMan(design / funds), Jihem(funds & Server), Deebs(design / funds), Blazingfire(funds & Bugtesting), Tally(code), THP801(code)";
 		requiredVersion 	= 1.60;
-		requiredAddons[] 	= { "A3_Functions_F", "CBA_settings" };
+		requiredAddons[] 	= { "A3_Functions_F", "CBA_settings", "CBA_main" };
 		units[] 			= {};
 		weapons[] 			= {};
 	};
