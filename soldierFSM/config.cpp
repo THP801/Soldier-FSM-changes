@@ -2,7 +2,7 @@
 #include "\soldierFSM\functions\cfgFunctions.hpp"
 #include "\soldierFSM\sounds\cfgRadio.hpp"
 #include "\soldierFSM\sounds\cfgSounds.hpp"
-#include "CfgEventhandlers.hpp"
+
 
 class CfgPatches
 {
