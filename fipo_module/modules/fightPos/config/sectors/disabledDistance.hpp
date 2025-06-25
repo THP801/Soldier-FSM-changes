@@ -1,5 +1,5 @@
-class disabeled
+class disabled
 {
-    name = "Disabeled (Enemy movement on this flank has no effect)";
+    name = "Disabled (Enemy movement on this flank has no effect)";
     value = -1;
 };
