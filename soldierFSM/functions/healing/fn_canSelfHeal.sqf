@@ -21,6 +21,6 @@ if!([_man] call SFSM_fnc_hasMedKit)                exitWith{false};
 
 if(_playerCheck)exitWith{true};
 
-if(SFSM_EmergencyHealing isEqualTo "disabeled")exitWith{false};
+if(SFSM_EmergencyHealing isEqualTo "disabled")exitWith{false};
 
 true;
