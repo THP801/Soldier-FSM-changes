@@ -9,3 +9,14 @@
     1,
     {}
 ] call CBA_fnc_addSetting;
+
+
+[
+    "SFSM_enableFullDetection",
+    "CHECKBOX",
+    ["Enable Full Detection", "Toggle whether groups actively scan for enemies"],
+    "SFSM - AI Detection",
+    true,
+    1,
+    {}
+] call CBA_fnc_addSetting;
