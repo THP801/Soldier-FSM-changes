@@ -13,7 +13,7 @@ if(is3DEN)exitWith{};
 if((!isNil "SFSM_disableSoldierFSM")
 &&{SFSM_disableSoldierFSM})
 exitWith{
-            ["SOLDIER FSM Has been disabeled!!", true, true, 2, "--SFSM ShutDown--"] 
+            ["SOLDIER FSM Has been disabled!!", true, true, 2, "--SFSM ShutDown--"] 
             call Tcore_fnc_debugMessage;
         };
 
