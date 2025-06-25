@@ -6,8 +6,8 @@ private _versionName = "DCO soldier FSM | Medical";
 	["Emergency heal", "Determine if a soldier should heal himself when hit. (could be legs only, or whole body)"],
 	_versionName,
 	[
-		["disabeled", "legs-only", "whole-body"],
-		["disabeled", "legs-only", "whole-body"], 
+		["disabled", "legs-only", "whole-body"],
+		["disabled", "legs-only", "whole-body"], 
 		1
 	]
 ] call CBA_fnc_addSetting;
