@@ -12,6 +12,11 @@ if!(SFSM_enableCustomEH)
 exitWith{"custom eventhandler deactivated, using vanilla enemy-detected EH" call dbgmsg};
 
 while {true} do {
+
+private _timer = SFSM_customEH_Timer;
+if (SFSM_battleActive) then {_timer = 0.5;} else {_timer = 5;};
+sleep _timer;
+
 sleep SFSM_customEH_Timer;
     {
         private _leader = leader _x;
