@@ -44,6 +44,8 @@ then{
         SFSM_explosionCoverRad  = 200;   // if munition explodes within this distance from the soldier he will run for cover.
         SFSM_breakCoverOnHit    = true;  // if hit while in cover the unit will move away from current position
         SFSM_dodgeIndoors       = false; // If a soldier is inside a house the "dodge" function will activate if the unit is taking heavy fire.
+        SFSM_customEH_Timer     = 2;     // Time between checks
+        SFSM_enableFullDetection = true; // toggle if groups actively scan for enemies
         
         SFSM_CQBdistance        = 100;   // Distance to enemy inside a building needed to activate CQB-mode.
         SFSM_CQBunitCap         = 2;     // The maximum amount of units that can clear the same house at the same time. (Yip wanted 2 as a default, I recomend 4).
