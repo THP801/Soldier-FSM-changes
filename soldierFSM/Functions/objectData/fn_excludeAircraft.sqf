@@ -1,22 +1,26 @@
-// this excludes aircraft from soldierFSM
 if (!isServer) exitWith {};
 
-private _excluded = [];
+// Use a namespace to avoid polluting global variables
+missionNamespace setVariable ["SFSM_ExcludedVehicles", []];
 
-private _exclude = {
+// Function to exclude air vehicles
+private _excludeAirVehicles = {
+    private _excluded = missionNamespace getVariable ["SFSM_ExcludedVehicles", []];
+
     {
         if (_x isKindOf "Air" && {!(_x getVariable ["excluded_SFSM", false])}) then {
             _x setVariable ["excluded_SFSM", true, true];
-            _excluded pushBack _x;
+            _excluded pushBackUnique _x;  // Ensures no duplicates
         };
     } forEach vehicles;
+
+    missionNamespace setVariable ["SFSM_ExcludedVehicles", _excluded];
 };
 
-call _exclude;
+// Run once at start
+call _excludeAirVehicles;
 
-[] spawn {
-    while {true} do {
-        sleep 10;
-        call _exclude;
-    };
-};
+// Use CBA scheduled function for periodic checking (safer and cleaner)
+["SFSM_ExcludeLoop", 10, {
+    call _excludeAirVehicles;
+}, [], true] call CBA_fnc_addPerFrameHandler;
