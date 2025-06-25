@@ -13,7 +13,6 @@ exitWith{"custom eventhandler deactivated, using vanilla enemy-detected EH" call
 
 while {true} do {
 sleep SFSM_customEH_Timer;
-
 // Only run detection if setting is enabled
         if (!SFSM_enableFullDetection) then { continue; };
 
