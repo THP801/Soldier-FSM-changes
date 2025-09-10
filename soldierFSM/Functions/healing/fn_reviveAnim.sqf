@@ -26,6 +26,6 @@ waitUntil {
 
 detach _man;
 
-_man switchMove "AinjPpneMstpSnonWnonDnon";
+_man switchMove "AmovPknlMstpSrasWrflDnon";
 
 true;
