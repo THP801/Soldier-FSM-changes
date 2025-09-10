@@ -60,7 +60,7 @@ if!(_success)exitWith{false;};
 _unconscious enableAI "all";
 _unconscious doMove     (position leader group _unconscious);
 _unconscious doFollow   (leader group _unconscious);
-_unconscious switchMove "AinjPpneMstpSnonWnonDnon";
+_unconscious switchMove "AmovPpneMstpSrasWrflDnon";
 
 _asset = [_unconscious] call SFSM_fnc_squadAsset;
 if(_asset isEqualTo "medic")then{
