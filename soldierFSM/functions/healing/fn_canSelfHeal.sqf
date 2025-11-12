@@ -17,7 +17,7 @@ private _playerCheck = false;
 params ["_man", "_playerCheck"];
 
 if!([_man, true, true, true] call SFSM_fnc_canRun) exitWith{false};
-if!([_man] call SFSM_fnc_hasMedKit)                exitWith{false};
+if!([_man] call SFSM_fnc_hasMedkit)                exitWith{false};
 
 if(_playerCheck)exitWith{true};
 
